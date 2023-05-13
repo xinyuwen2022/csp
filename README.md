@@ -2,11 +2,7 @@
 
 You are given a 5 x 5 grid, and this grid should hold the letters A through Y.  Some of the cells in the grid are already filled out.  The others can go anywhere, but the constraint is that adjacent letters (for example F and G) must be adjacent to each other, either horizontally or vertically.  
 
--    -    -    -    Y
-R    A    -    -    -
--    -    -    -    -
--    E    -    -    -
--    -    -    -    K
+
 
 
 The main function solve_csp uses a heuristic depth-first search strategy to find a valid assignment of letters to cells in the grid. The heuristic used is the most constrained variable heuristic, which is implemented in the find_most_constrained_position function. This heuristic chooses the variable (or cell, in this context) that has the most constraints on it to assign first. In this case, it chooses the cell that has the most neighboring cells already filled.
